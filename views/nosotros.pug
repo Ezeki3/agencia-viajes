@@ -3,4 +3,29 @@ extends ./layout/index
 block contenido 
   main.container.mt-5
     .row 
-      h1= pagina
+      .col-md-5
+        img(src="img/nosotros.jpg" alt="imagen sobre nosotros", class="img-fluid")
+      .col-md-7 
+        h1 #{pagina}
+        blockquote Lorem ipsum dolor sit amet consectetur, adipiscing elit magnis fusce, venenatis orci imperdiet massa. Rutrum dui faucibus morbi duis ultrices porttitor tortor tempus iaculis, phasellus sed facilisi pulvinar rhoncus tempor ornare dictumst suscipit, hendrerit vitae class convallis nec tristique aliquet litora.
+
+        p Scelerisque vehicula fringilla fames volutpat orci cum faucibus lacinia platea sociosqu, augue fusce vulputate litora aptent dapibus quam mattis. Praesent nostra sociis platea nibh leo gravida metus fermentum, porta justo conubia inceptos tempus suscipit 
+
+        p Tristique risus urna nec quis convallis nunc, pharetra curae pretium nostra auctor dictum fusce, volutpat eros eget gravida placerat. 
+  .listado-iconos 
+    .container.mt-5.py-5.text-center 
+      .row 
+        .col-md-4
+          img(src="img/icono_seguridad.svg" alt="icono seguridad", class="img-fluid mb-4")
+          h2.mb-4 Seguridad 
+          p Tristique risus urna nec quis convallis nunc, pharetra curae pretium nostra auctor dictum fusce, volutpat eros eget gravida placerat. 
+        
+        .col-md-4
+          img(src="img/icono_destinos.svg" alt="icono seguridad", class="img-fluid mb-4")
+          h2.mb-4 Mejores destinos 
+          p Tristique risus urna nec quis convallis nunc, pharetra curae pretium nostra auctor dictum fusce, volutpat eros eget gravida placerat. 
+        
+        .col-md-4
+          img(src="img/icono_precios.svg" alt="icono seguridad", class="img-fluid mb-4")
+          h2.mb-4 Los mejores precios 
+          p Tristique risus urna nec quis convallis nunc, pharetra curae pretium nostra auctor dictum fusce, volutpat eros eget gravida placerat. 
