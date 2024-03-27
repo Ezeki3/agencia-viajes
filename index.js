@@ -11,9 +11,10 @@ app.set('view engine', 'pug');
 
 // Obtener el año actual
 app.use( (req, res, next) => {
-  let year = new Date();
+  const year = new Date();
 
   res.locals.actualYear = year.getFullYear();
+  res.locals.nombresitio = "Agencia de Viajes"
   next();
 })
 

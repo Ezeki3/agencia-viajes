@@ -3,15 +3,31 @@ import express from 'express';
 const router = express.Router();
 
 router.get('/', (req, res) => { //req - lo que enviamos,  res - lo que express nos responde
-  res.render('inicio');
+  
+  res.render('inicio', {
+    pagina: 'Inicio'
+  });
 });
 
 router.get('/nosotros', (req, res) => { //req - lo que enviamos,  res - lo que express nos responde
-  res.render('nosotros');
+  
+  res.render('nosotros', {
+    pagina: 'Nosotros'
+  });
 });
 
-router.get('/contacto', (req, res) => { //req - lo que enviamos,  res - lo que express nos responde
-  res.send('Contacto');
+router.get('/viajes', (req, res) => { //req - lo que enviamos,  res - lo que express nos responde
+  
+  res.render('viajes', {
+    pagina: 'Viajes'
+  });
+});
+
+router.get('/testimoniales', (req, res) => { //req - lo que enviamos,  res - lo que express nos responde
+  
+  res.render('testimoniales', {
+    pagina: 'Testimoniales'
+  });
 });
 
 export default router;
